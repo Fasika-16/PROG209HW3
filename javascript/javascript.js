@@ -3,7 +3,6 @@ function newMovie() {
         document.getElementById("title").value,
         document.getElementById("rating").value,
     );
-
     if (!movie.isValid()) {
         alert("Invalid data input. Please enter the correct data.");
     }
