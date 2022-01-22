@@ -9,7 +9,7 @@ function addMovie(){
                 movies.push(newMovie);
         }
         else{
-                alert("WARNING! You didn't add a movie");
+                alert("WARNING! You didn't add a movie ");
         }
         
         document.getElementById('title').value="";
