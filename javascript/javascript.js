@@ -16,11 +16,11 @@ function movie(title, rating){
             return "Movie: "+this.title+", Rating: "+this.rating;
     }
 }
-var movies = [];
+let movies = [];
 function addMovie(){
-        var title = document.getElementById('title').value;
-        var rating = document.getElementById('rating').value;
-        var newMovie = new movie(title, rating);
+        let title = document.getElementById('title').value;
+        let rating = document.getElementById('rating').value;
+        let newMovie = new movie(title, rating);
         if(newMovie.validate()){
                 
                 movies.push(newMovie);
@@ -35,7 +35,7 @@ function addMovie(){
 }
 
 function showMovies(){
-        var htmlText = "movies: <ul>";
+        let htmlText = "movies: <ul>";
         for(var i=0;i<movies.length;i++){
                 htmlText += "<li>"+movies[i].toString()+"</li>";
         }
